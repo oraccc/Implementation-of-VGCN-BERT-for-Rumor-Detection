@@ -24,10 +24,31 @@ from nltk.tokenize import TweetTokenizer
 General functions
 '''
 
+def get_limited_split(text):
+	# Delete '[SEP]'
+	text_list = text.split("[SEP]")
+	text_length = min(31, len(text_list))
+	new_text_list = text_list[:text_length]
+	new_text = "".join(new_text_list)
+	l_total = []
+	l_parcial = []
+	if len(new_text.split())//150 >0:
+		n = len(new_text.split())//150
+	else: 
+		n = 1
+	for w in range(n):
+		if w == 0:
+			l_parcial = new_text.split()[:200]
+			l_total.append(" ".join(l_parcial))
+		else:
+			l_parcial = new_text.split()[w*150:w*150 + 200]
+			l_total.append(" ".join(l_parcial))
+
+	return l_total
+
 def get_split(text):
 	# Delete '[SEP]'
 	text = text.replace('[SEP]','')
-	# print(len(text.split()))
 	l_total = []
 	l_parcial = []
 	if len(text.split())//150 >0:
@@ -43,6 +64,7 @@ def get_split(text):
 			l_total.append(" ".join(l_parcial))
 
 	return l_total
+
 
 def get_fixed_split(text):
 	# Delete '[SEP]'
