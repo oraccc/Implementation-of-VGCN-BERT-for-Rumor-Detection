@@ -1,15 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# # # #
-# utils.py
-# @author Zhibin.LU
-# @created 2019-12-24T10:51:59.943Z-05:00
-# @last-modified 2020-01-02T03:47:54.026Z-05:00
-# @website: https://louis-udm.github.io
-# @description 
-# # # #
-
-
 import numpy as np
 import scipy.sparse as sp
 import re
