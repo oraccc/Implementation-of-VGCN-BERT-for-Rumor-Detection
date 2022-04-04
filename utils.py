@@ -1,3 +1,4 @@
+import string
 import numpy as np
 import scipy.sparse as sp
 import re
@@ -14,6 +15,7 @@ General functions
 
 def get_limited_split(text):
 	# Delete '[SEP]'
+	text = str(text)
 	text_list = text.split("[SEP]")
 	text_length = min(31, len(text_list))
 	new_text_list = text_list[:text_length]
@@ -36,6 +38,7 @@ def get_limited_split(text):
 
 def get_split(text):
 	# Delete '[SEP]'
+	text = str(text)
 	text = text.replace('[SEP]','')
 	l_total = []
 	l_parcial = []
