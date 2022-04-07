@@ -1,15 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# # # #
-# model_vgcn_bert.py
-# @author Zhibin.LU
-# @created 2019-09-10T14:27:18.572Z-04:00
-# @last-modified 2020-05-08T01:25:48.711Z-04:00
-# @website: https://louis-udm.github.io
-# @description: Models
-# # # #
-
-
 import torch
 import torch.nn as nn
 import torch.nn.init as init
@@ -62,7 +50,7 @@ class VocabGraphConvolution(nn.Module):
     def forward(self, vocab_adj_list, X_dv, add_linear_mapping_term=False):
         for i in range(self.num_adj):
             H_vh=vocab_adj_list[i].mm(getattr(self, 'W%d_vh'%i))
-            # H_vh=self.dropout(F.elu(H_vh))
+            # H_vh=self.dropout(F.relu(H_vh))
             H_vh=self.dropout(H_vh)
             H_dh=X_dv.matmul(H_vh)
 
