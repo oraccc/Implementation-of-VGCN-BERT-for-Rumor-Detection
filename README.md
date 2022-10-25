@@ -22,5 +22,15 @@
 
 #### 2.1 Prepare
 
+* Clean Redundant Data
+
+* Format dataset from **json** to **csv**
+
+  <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/dataset-reorganize.png" width="500" />
+
 > data_reorganize_pheme.ipynb / data_reorganize_weibo.ipynb
+
+* Dataset reorganize & segment long text
+
+  <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/long-text-segment.png" width="500" />
 
