@@ -6,6 +6,10 @@
 
 ### 1. Project Introduction
 
+* **Overall Structure**
+
+  <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/overall-structure.png" width="500" />
+
 * **Model Structure** 
 
   * :one: **Segmentation Rumor Text Feature Extraction Module** （分段谣言文本特征提取模块）
@@ -28,9 +32,10 @@
 
   <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/dataset-reorganize.png" width="500" />
 
-> data_reorganize_pheme.ipynb / data_reorganize_weibo.ipynb
+##### data_reorganize_pheme.ipynb / data_reorganize_weibo.ipynb
 
 * Dataset reorganize & segment long text
 
   <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/long-text-segment.png" width="500" />
 
+**prepare_data.py / prepare_date.ipynb**
