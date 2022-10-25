@@ -8,7 +8,9 @@
 
 * **Overall Structure**
 
-  <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/overall-structure.png" width="500" />
+<div align="center">
+<img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/overall-structure.png" width="500" />
+</div>
 
 * **Model Structure** 
 
