@@ -8,9 +8,10 @@
 
 * **Overall Structure**
 
-<div align="center">
+<div align=center>
 <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/overall-structure.png" width="500" />
 </div>
+
 
 * **Model Structure** 
 
@@ -41,3 +42,19 @@
   <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/long-text-segment.png" width="500" />
 
 **prepare_data.py / prepare_date.ipynb**
+
+* Get Vocabulary Graph
+
+  <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/graph-construction.png" width="350" />
+
+##### train_vgcn_bert.ipynb
+
+* Train VGCN_BERT on graph data and comments data
+
+##### joint_vgcn_bert_model.ipynb
+
+* Feature concatenate
+
+  <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/feature-concatenate.png" width="500" />
+
+* Apply trained VGCN_BERT model to get rumor detection results
