@@ -8,9 +8,8 @@
 
 * **Overall Structure**
 
-<div align=center>
 <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/overall-structure.png" width="500" />
-</div>
+
 
 
 * **Model Structure** 
@@ -33,23 +32,23 @@
 
   <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/dataset-reorganize.png" width="500" />
 
-#### data_reorganize_pheme.ipynb / data_reorganize_weibo.ipynb
+#### :one: data_reorganize_pheme.ipynb / data_reorganize_weibo.ipynb
 
 * Dataset reorganize & segment long text
 
   <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/long-text-segment.png" width="500" />
 
-#### **prepare_data.py**
+#### :two: **prepare_data.py**
 
 * Get Vocabulary Graph
 
   <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/graph-construction.png" width="350" />
 
-#### train_vgcn_bert.ipynb
+#### :three: train_vgcn_bert.ipynb
 
 * Train VGCN_BERT on graph data and comments data
 
-#### joint_vgcn_bert_model.ipynb
+#### :four: joint_vgcn_bert_model.ipynb
 
 * Feature concatenate
 
