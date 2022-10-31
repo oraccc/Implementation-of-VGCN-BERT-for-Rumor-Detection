@@ -59,3 +59,7 @@
   <img src="https://raw.githubusercontent.com/oraccc/Implementation-of-VGCN-BERT-for-Rumor-Detection/master/images/feature-concatenate.png" width="500" />
 
 * Apply trained VGCN_BERT model to get rumor detection results
+
+### 3. Experiment Results
+
+(to be continued...)
